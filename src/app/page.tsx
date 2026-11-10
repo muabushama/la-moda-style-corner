@@ -34,15 +34,15 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <section className="mx-auto max-w-7xl px-4 py-16">
+      <section className="mx-auto max-w-7xl px-3 py-10 sm:px-4 sm:py-16">
         <SectionHeading title={t.sections.categories} />
         <CategoryCards />
       </section>
-      <section className="mx-auto max-w-7xl px-4 py-8">
+      <section className="mx-auto max-w-7xl px-3 py-8 sm:px-4">
         <SectionHeading title={t.sections.newArrivals} />
         <ProductGrid products={newest} />
       </section>
-      <section className="mx-auto max-w-7xl px-4 py-8">
+      <section className="mx-auto max-w-7xl px-3 py-8 sm:px-4">
         <SectionHeading title={t.sections.bestSellers} />
         <ProductGrid products={best} />
       </section>
@@ -50,8 +50,8 @@ export default function HomePage() {
         <div className="relative min-h-72 overflow-hidden rounded-[2rem]">
           <ProductImage src={promoBanner.image} alt={t.promo.title} sizes="100vw" />
           <div className="absolute inset-0 bg-primary-dark/55" />
-          <div className="absolute inset-0 flex flex-col items-start justify-center p-8 text-white md:p-14">
-            <h2 className="font-display text-4xl">{t.promo.title}</h2>
+          <div className="absolute inset-0 flex flex-col items-start justify-center p-5 text-white sm:p-8 md:p-14">
+            <h2 className="font-display text-2xl sm:text-4xl">{t.promo.title}</h2>
             <p className="mt-3 max-w-md text-white/85">{t.promo.text}</p>
             <Button href="/shop?sale=1" variant="secondary" className="mt-6">
               {t.promo.cta}
@@ -59,7 +59,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-4 py-10">
+      <section className="mx-auto max-w-7xl px-3 py-10 sm:px-4">
         <SectionHeading title={t.sections.collections} />
         <div className="flex flex-wrap justify-center gap-3">
           {collections.map((c) => (
@@ -69,7 +69,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      <section className="bg-lavender/60 py-16">
+      <section className="bg-lavender/60 py-10 sm:py-16">
         <div className="mx-auto max-w-7xl px-4">
           <SectionHeading title={t.sections.why} />
           <div className="grid gap-5 md:grid-cols-4">
@@ -83,7 +83,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-4 py-16">
+      <section className="mx-auto max-w-7xl px-3 py-10 sm:px-4 sm:py-16">
         <SectionHeading title={t.sections.testimonials} />
         <Testimonials />
       </section>
@@ -93,7 +93,7 @@ export default function HomePage() {
           <NewsletterForm />
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-4 py-16">
+      <section className="mx-auto max-w-7xl px-3 py-10 sm:px-4 sm:py-16">
         <SectionHeading title={t.sections.instagram} />
         <div className="grid grid-cols-2 gap-3 md:grid-cols-6">
           {instagramImages.map((src) => (

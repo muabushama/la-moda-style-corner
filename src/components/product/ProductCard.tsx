@@ -19,7 +19,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <>
-      <article className="group rounded-2xl border border-border bg-white p-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+      <article className="group min-w-0 rounded-2xl border border-border bg-white p-2 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-3">
         <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-lavender">
           <Link href={`/product/${product.slug}`} className="absolute inset-0">
             <ProductImage
@@ -45,9 +45,10 @@ export function ProductCard({ product }: { product: Product }) {
             <button
               type="button"
               onClick={() => setOpen(true)}
-              className="flex flex-1 items-center justify-center gap-1 rounded-full bg-white/95 py-2 text-xs"
+              className="flex flex-1 items-center justify-center gap-1 rounded-full bg-white/95 py-1.5 text-[11px] sm:py-2 sm:text-xs"
             >
-              <Eye className="size-3.5" /> {t.quickView}
+              <Eye className="size-3.5 shrink-0" />
+              <span className="hidden truncate sm:inline">{t.quickView}</span>
             </button>
             <Link
               href={`/product/${product.slug}`}

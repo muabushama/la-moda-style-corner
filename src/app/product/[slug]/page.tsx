@@ -61,7 +61,7 @@ export default function ProductPage() {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10">
+    <div className="mx-auto max-w-7xl px-3 py-6 sm:px-4 sm:py-10">
       <Breadcrumbs
         items={[
           { href: "/", label: t.nav.home },
@@ -72,7 +72,7 @@ export default function ProductPage() {
       <div className="grid gap-10 lg:grid-cols-2">
         <ProductGallery images={product.images} alt={name} />
         <div>
-          <h1 className="font-display text-4xl text-primary-dark">{name}</h1>
+          <h1 className="font-display text-3xl text-primary-dark sm:text-4xl">{name}</h1>
           <div className="mt-3 flex items-center gap-3">
             <RatingStars rating={product.rating} count={product.reviewsCount} />
             <span className="text-xs text-muted">

@@ -36,12 +36,12 @@ export default function CartPage() {
               return (
                 <li
                   key={`${item.productId}-${item.size}-${item.colorId}`}
-                  className="flex gap-4 rounded-2xl border border-border bg-white p-4"
+                  className="flex flex-col gap-3 rounded-2xl border border-border bg-white p-3 sm:flex-row sm:gap-4 sm:p-4"
                 >
-                  <div className="relative h-28 w-24 overflow-hidden rounded-xl bg-lavender">
+                  <div className="relative h-28 w-24 shrink-0 overflow-hidden rounded-xl bg-lavender">
                     <ProductImage src={p.images[0]} alt={productName(p, locale)} sizes="96px" />
                   </div>
-                  <div className="flex-1 text-sm">
+                  <div className="min-w-0 flex-1 text-sm">
                     <p className="font-medium">{productName(p, locale)}</p>
                     <p className="mt-1 text-muted">
                       {t.cart.size}: {item.size} · {t.cart.color}: {color ? (locale === "ar" ? color.nameAr : color.nameEn) : item.colorId}
@@ -54,7 +54,7 @@ export default function CartPage() {
                       </button>
                     </div>
                   </div>
-                  <p className="text-sm font-medium">{formatEGP(p.price * item.quantity, locale)}</p>
+                  <p className="text-sm font-medium sm:text-end">{formatEGP(p.price * item.quantity, locale)}</p>
                 </li>
               );
             })}

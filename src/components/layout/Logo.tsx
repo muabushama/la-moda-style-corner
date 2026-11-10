@@ -5,7 +5,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
   if (compact) {
     return (
       <Link href="/" className="shrink-0" aria-label="LA MODA STYLE CORNER">
-        <span className="relative block size-24 overflow-hidden rounded-full bg-white p-1 shadow-md ring-2 ring-primary/25 md:size-28">
+        <span className="relative block size-14 overflow-hidden rounded-full bg-white p-0.5 shadow-md ring-2 ring-primary/25 sm:size-16 lg:size-20">
           <Image
             src="/images/la-moda-logo.png"
             alt="LA MODA STYLE CORNER"
@@ -26,7 +26,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
         alt="LA MODA STYLE CORNER"
         width={160}
         height={240}
-        className="h-28 w-auto object-contain"
+        className="h-20 w-auto max-w-full object-contain sm:h-28"
       />
     </Link>
   );

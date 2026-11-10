@@ -21,9 +21,9 @@ function ShopInner() {
   const title = params.get("sale") ? t.nav.sale : params.get("new") ? t.nav.newArrivals : t.shop.title;
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-10">
+    <div className="mx-auto max-w-7xl px-3 py-6 sm:px-4 sm:py-10">
       <Breadcrumbs items={[{ href: "/", label: t.nav.home }, { label: title }]} />
-      <h1 className="mb-8 font-display text-4xl text-primary-dark">{title}</h1>
+      <h1 className="mb-6 font-display text-3xl text-primary-dark sm:mb-8 sm:text-4xl">{title}</h1>
       <ProductListing products={list} />
     </div>
   );

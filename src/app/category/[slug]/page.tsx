@@ -32,14 +32,14 @@ export default function CategoryPage() {
       <div className="relative h-56 overflow-hidden md:h-72">
         <ProductImage src={category.image} alt={name} sizes="100vw" />
         <div className="absolute inset-0 bg-primary-dark/45" />
-        <div className="absolute inset-0 flex items-end p-8 text-white md:p-12">
+        <div className="absolute inset-0 flex items-end p-5 text-white sm:p-8 md:p-12">
           <div>
-            <h1 className="font-display text-4xl">{name}</h1>
+            <h1 className="font-display text-3xl sm:text-4xl">{name}</h1>
             <p className="mt-2 max-w-xl text-white/85">{locale === "ar" ? category.descriptionAr : category.descriptionEn}</p>
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-4 py-10">
+      <div className="mx-auto max-w-7xl px-3 py-6 sm:px-4 sm:py-10">
         <Breadcrumbs items={[{ href: "/", label: t.nav.home }, { href: "/shop", label: t.nav.shop }, { label: name }]} />
         <ProductListing products={list} hideCategory />
       </div>

@@ -33,19 +33,19 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-2">
-        <button type="button" className="md:hidden" onClick={() => setMenuOpen(true)} aria-label="Menu">
+      <div className="mx-auto flex max-w-7xl min-w-0 items-center gap-2 px-3 py-2 sm:gap-3 sm:px-4">
+        <button type="button" className="grid size-10 shrink-0 place-items-center lg:hidden" onClick={() => setMenuOpen(true)} aria-label="Menu">
           <Menu className="size-6" />
         </button>
         <Logo compact />
-        <nav className="hidden flex-1 items-center justify-center gap-6 text-sm md:flex">
+        <nav className="hidden min-w-0 flex-1 flex-wrap items-center justify-center gap-x-4 gap-y-1 text-sm lg:flex">
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-primary">
+            <Link key={item.href} href={item.href} className="whitespace-nowrap hover:text-primary">
               {item.label}
             </Link>
           ))}
         </nav>
-        <div className="ms-auto flex items-center gap-2">
+        <div className="ms-auto flex shrink-0 items-center">
           <button type="button" className="grid size-10 place-items-center" onClick={() => setSearchOpen((v) => !v)} aria-label={t.nav.search}>
             <Search className="size-5" />
           </button>
@@ -74,7 +74,7 @@ export function Header() {
         </div>
       </div>
       {searchOpen ? (
-        <div className="border-t border-border bg-white px-4 py-3">
+        <div className="border-t border-border bg-white px-3 py-3 sm:px-4">
           <div className="mx-auto max-w-xl">
             <SearchBar onSubmit={() => setSearchOpen(false)} />
           </div>

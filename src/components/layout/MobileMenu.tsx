@@ -24,7 +24,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
   ] as const;
 
   return (
-    <div className="fixed inset-0 z-50 bg-primary-dark/40 md:hidden" onClick={onClose}>
+    <div className="fixed inset-0 z-50 bg-primary-dark/40 lg:hidden" onClick={onClose}>
       <nav
         className="absolute inset-y-0 start-0 w-[min(100%,320px)] overflow-auto bg-white p-5"
         onClick={(e) => e.stopPropagation()}
