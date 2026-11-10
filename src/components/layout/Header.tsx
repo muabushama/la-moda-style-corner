@@ -33,7 +33,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3">
+      <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-2">
         <button type="button" className="md:hidden" onClick={() => setMenuOpen(true)} aria-label="Menu">
           <Menu className="size-6" />
         </button>
