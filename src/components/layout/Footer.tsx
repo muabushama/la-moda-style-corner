@@ -54,7 +54,15 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <p className="border-t border-border py-4 text-center text-xs text-muted">{t.footer.copy}</p>
+      <div className="border-t border-border py-4 text-center text-xs text-muted">
+        <p>{t.footer.copy}</p>
+        <p className="mt-2 font-medium text-primary">
+          Powerd by PIXEL 01 -{" "}
+          <a href="tel:01034029665" className="hover:underline" dir="ltr">
+            01034029665
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
