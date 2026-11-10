@@ -5,9 +5,6 @@ import { RefreshCcw, ShieldCheck, Truck } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Button } from "@/components/ui/Button";
 
-const rack =
-  "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=80";
-
 export function HeroSection() {
   const { t } = useLanguage();
   return (
@@ -36,23 +33,18 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="relative aspect-[5/4] overflow-hidden rounded-[2.5rem] border border-white shadow-xl">
-          <Image src={rack} alt={t.hero.title} fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-primary-dark/20 to-transparent" />
-          <div className="absolute inset-x-0 bottom-0 flex items-end gap-4 p-5 md:p-7">
-            <span className="relative size-20 shrink-0 overflow-hidden rounded-full bg-white p-1 shadow-lg ring-2 ring-white md:size-24">
-              <Image
-                src="/images/la-moda-logo.png"
-                alt="LA MODA STYLE CORNER"
-                fill
-                sizes="96px"
-                className="object-contain p-1"
-              />
-            </span>
-            <p className="font-display text-xl leading-snug text-white drop-shadow md:text-3xl">
-              {t.hero.overlay}
-            </p>
-          </div>
+        <div className="relative flex aspect-[5/4] flex-col items-center justify-center overflow-hidden rounded-[2.5rem] border border-white bg-lavender/70 p-4 shadow-xl">
+          <Image
+            src="/images/la-moda-logo.png"
+            alt="LA MODA STYLE CORNER"
+            fill
+            sizes="(max-width:768px) 100vw, 50vw"
+            className="object-contain p-6"
+            priority
+          />
+          <p className="relative z-10 mt-auto rounded-full bg-white/90 px-4 py-2 text-center font-display text-lg text-primary md:text-2xl">
+            {t.hero.overlay}
+          </p>
         </div>
       </div>
     </section>
