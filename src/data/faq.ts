@@ -1,0 +1,51 @@
+export const faqItems = [
+  {
+    id: "q1",
+    qAr: "كيف أضع طلباً؟",
+    qEn: "How do I place an order?",
+    aAr: "اختاري المنتجات، أضيفيها إلى السلة بعد اختيار المقاس واللون، ثم أكملي خطوات الدفع التجريبي. هذا الموقع نسخة عرض ولا يرسل طلبات حقيقية.",
+    aEn: "Choose products, add them after selecting size and color, then complete the demo checkout. This site is a presentation demo and does not send real orders.",
+  },
+  {
+    id: "q2",
+    qAr: "ما المقاسات المتوفرة؟",
+    qEn: "What sizes are available?",
+    aAr: "ملابس النساء بمقاسات XS إلى XL، والأطفال حسب الفئة العمرية. راجعي دليل المقاسات للتفاصيل.",
+    aEn: "Women’s pieces range from XS to XL; children’s sizes follow age groups. See the size guide for details.",
+  },
+  {
+    id: "q3",
+    qAr: "ما مدة التوصيل؟",
+    qEn: "How long is delivery?",
+    aAr: "في العرض التوضيحي نعرض خيارات توصيل داخل مصر من يومين إلى خمسة أيام عمل بأسعار تجريبية.",
+    aEn: "This demo shows Egypt delivery options from two to five working days with sample fees.",
+  },
+  {
+    id: "q4",
+    qAr: "ما طرق الدفع؟",
+    qEn: "What payment methods are available?",
+    aAr: "العرض يدعم الدفع عند الاستلام فقط كخيار محاكى. لا نجمع بيانات بطاقات ائتمان.",
+    aEn: "The demo supports Cash on Delivery as a simulated option only. We never collect card details.",
+  },
+  {
+    id: "q5",
+    qAr: "هل يمكن الاسترجاع أو الاستبدال؟",
+    qEn: "Can I return or exchange?",
+    aAr: "سياسة الاسترجاع التجريبية تسمح بالإرجاع خلال 14 يوماً للمنتجات غير المستخدمة. لا تتم عمليات مالية حقيقية هنا.",
+    aEn: "The demo return policy allows unused items within 14 days. No real money is processed here.",
+  },
+  {
+    id: "q6",
+    qAr: "كيف أتابع طلبي؟",
+    qEn: "How do I track my order?",
+    aAr: "بعد إتمام الطلب التجريبي يظهر رقم طلب في صفحة النجاح ويمكنك رؤيته في حسابك.",
+    aEn: "After placing a demo order you receive an order number on the success page and in your account.",
+  },
+  {
+    id: "q7",
+    qAr: "كيف أتواصل مع الدعم؟",
+    qEn: "How do I contact support?",
+    aAr: "استخدمي صفحة تواصل معنا. النموذج يعمل محلياً ولا يرسل رسائل إلى خادم.",
+    aEn: "Use the Contact page. The form works locally and does not send messages to a server.",
+  },
+];
