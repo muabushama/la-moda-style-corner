@@ -5,13 +5,13 @@ export function Logo({ compact = false }: { compact?: boolean }) {
   if (compact) {
     return (
       <Link href="/" className="shrink-0" aria-label="LA MODA STYLE CORNER">
-        <span className="relative block size-20 overflow-hidden rounded-full bg-white shadow-md ring-2 ring-primary/25 md:size-24">
+        <span className="relative block size-24 overflow-hidden rounded-full bg-white p-1 shadow-md ring-2 ring-primary/25 md:size-28">
           <Image
             src="/images/la-moda-logo.png"
             alt="LA MODA STYLE CORNER"
             fill
-            sizes="96px"
-            className="scale-[1.35] object-cover object-[center_40%]"
+            sizes="112px"
+            className="object-contain p-1"
             priority
           />
         </span>
