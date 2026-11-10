@@ -30,6 +30,7 @@ export const translations = {
       fast: "توصيل سريع",
       secure: "دفع آمن (تجريبي)",
       returns: "إرجاع سهل",
+      overlay: "خزانة واحدة تجمع أناقة العائلة",
     },
     sections: {
       categories: "تسوقي حسب الفئة",
@@ -288,6 +289,7 @@ export const translations = {
       fast: "Fast Delivery",
       secure: "Secure Payment",
       returns: "Easy Return",
+      overlay: "One wardrobe for the whole family",
     },
     sections: {
       categories: "Shop by category",

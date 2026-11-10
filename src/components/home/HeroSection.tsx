@@ -38,6 +38,21 @@ export function HeroSection() {
         </div>
         <div className="relative aspect-[5/4] overflow-hidden rounded-[2.5rem] border border-white shadow-xl">
           <Image src={rack} alt={t.hero.title} fill className="object-cover" sizes="(max-width:768px) 100vw, 50vw" priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-primary-dark/20 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 flex items-end gap-4 p-5 md:p-7">
+            <span className="relative size-16 shrink-0 overflow-hidden rounded-full bg-white shadow-lg ring-2 ring-white md:size-20">
+              <Image
+                src="/images/la-moda-logo.png"
+                alt="LA MODA STYLE CORNER"
+                fill
+                sizes="80px"
+                className="scale-[1.35] object-cover object-[center_40%]"
+              />
+            </span>
+            <p className="font-display text-xl leading-snug text-white drop-shadow md:text-3xl">
+              {t.hero.overlay}
+            </p>
+          </div>
         </div>
       </div>
     </section>
